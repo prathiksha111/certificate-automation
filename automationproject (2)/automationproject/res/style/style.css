@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+ 
+}
+
+/* Styles for screens with a maximum width of 768 pixels (small screens) */
+
+
+
+
+
+  
+
+
+
+
+
+
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+    /* Add a gap of 10px between buttons */
+}
+
+.container1 .button {
+  background-color: black;
+  color: white;
+  border: none; /* Remove the border */
+  border-radius: 10%; /* Make the buttons round */
+  padding: 10px 20px; /* Adjust the padding as desired */
+  cursor: pointer;
+  outline: none;
+}
+
+.container1 .button.clicked {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+.wrapper {
+  max-width: 2000px;
+  width: 800px; /* Increase the width value as desired */
+  margin: 1px auto;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1em;
+  border-width: 4px;
+  position: relative;
+  bottom: 2px; /* Adjust the position as needed */
+  right: 2px; /* Adjust the position as needed */
+
+}
+
+/* Additional CSS for the form elements (example styles) */
+form {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+}
+
+
+.wrapper .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.wrapper .image-container img {
+  width: 300px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+.wrapper .title {
+  font-size: 25px;
+  font-weight:bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: black;
+  text-align: center;
+}
+
+.wrapper .form {
+  width: 100%;
+  
+}
+
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label {
+  width: 200px;
+  color: black;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 8.
+}
+.wrapper .form .inputfield .textarea {
+  height: 100px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: black transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 8px 10px;
+  font-size: 15px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .custom_select select,
+.wrapper .form .inputfield .textarea {
+  background: #f0f0f0;
+}
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .custom_select select:focus,
+.wrapper .form .inputfield .textarea:focus {
+  background: #e6e6e6;
+}
+
+.wrapper .form .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.wrapper .form .inputfield .check_terms {
+  font-size: 12px;
+}
+
+.wrapper .form .inputfield .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  background: WHITE;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover {
+  background: black;
+  COLOR:WHITE;
+  transition: all 0.3 ease;
+}
+
+.wrapper .form .inputfield .btn:active {
+  transform: scale(0.95);
+}
+
+.wrapper .form .inputfield:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .wrapper .form .inputfield {
+    flex-direction: column;
+    align-items: flex-start;
+    width:auto;
+  }
+
+  .wrapper .form .inputfield label {
+    margin-bottom: 5px;
+  }
+
+  .wrapper .form .inputfield.terms {
+    flex-direction: row;
+  }
+
+  .wrapper .form .inputfield.terms p {
+    margin-left: 10px;
+  }
+
+  .back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 10px 10px 10px 36px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  
+}
+
+.openbtn:hover {
+    position: relative;
+
+  background-color: black;
+  color:white
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+#gender {
+  color:black
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.button1:hover{
+  background-color: white;
+  color:black
+}    table {
+  border-collapse: collapse;
+  width: 100%;
+  border-color: transparent transparent #fff #fff;
+  margin: 50px auto;
+  border-width: 4px;
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  border-color: transparent ;
+  margin: 50px auto;
+  border-width: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+th {
+  background-color: lavender;
+  color:black;
+}
+
+.edit-button, .approval-button {
+  background-color: black;
+  color: rgb(248, 247, 247);
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1em;
+  border-width: 4px;
+}
+
+.edit-button:hover, .approval-button:hover {
+  background-color: #45a049;
+}
+
+.logout {
+  position: fixed;
+  top: 10px;
+  right: 1vw;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.change {
+  position: absolute;
+  top: 10px;
+  left: 1vw;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tableform1  {
+  width: 1480px;
+  background: white;
+  margin: 50px auto;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-width: 4px;
+  position: absolute;
+}
+
+.tableform1 .title1 {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tableform1 .form {
+  width: 100%;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1; /* Color for odd rows */
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff; /* Color for even rows */
+}
+
+table tr:hover {
+  background-color: #cccccc;
+}
+
+@media (max-width: 1500px) {
+  .tableform1 {
+      background-color: #f1f1f1; /* Fixed background color */
+      transition: none !important; /* Disable transition */
+  }   
+} 
+
+.search-container {
+display: flex;
+justify-content: flex-end;
+margin-top: 20px;
+}
+
+.search-box {
+position: relative;
+margin-left: 20px;
+}
+
+.search-box input[type="text"] {
+padding: 10px 40px 10px 10px;
+width: 200px;
+}
+
+.search-box input[type="text"]::placeholder {
+color: #999;
+}
+
+.search-box .search-icon {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+color: #999;
+cursor: pointer;
+}
+.sidebar-image {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border-radius: 50%; /* To create a circular shape */
+}

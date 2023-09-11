@@ -1,0 +1,14 @@
+STUDENT:
+	NAME-s_name                             REF NO.
+	GMAIL                            PASSWORD
+	USN                              REQ_DATE
+	MOB NO.                          ISSUED_DATE
+	FATHER NAME
+	CERTIFICATE TYPE
+	BRANCH
+	YEAR
+	GENDER
+	REASON
+
+ADFMINISTRATION:
+	
